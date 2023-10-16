@@ -1,27 +1,40 @@
-# CrudAngular
+# Teste B3
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
 
-## Development server
+Calculo de rendimentos Cdb.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Projeto Backend estruturado com onion architecture, utilizando .net 6, fluent validation , xunit fluentAssertion.
 
-## Code scaffolding
+Projeto front desenvolvido em Angular com 
+Angular Material 16.2.0
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Instalação/Exec
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Back-end ->  Teste.B3.Api
 
-## Running unit tests
+```bash
+dotnet restore
+dotnet build
+dotnet run
+```
+Back-end ->  Teste.B3.FrontEnd
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Instalar Node v- 18.18.2  -> Releases [pip](https://nodejs.org/en/download/releases) 
+```bash
+npm install -g @angular/cli@16.2.6
+npm install
+ng serve
+```
+Back-end-test ->  Teste.B3.Test
 
-## Running end-to-end tests
+```bash
+dotnet test
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Disponibilidade
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```python
+Back-end -> https://localhost:7251/
+FrontEnd ->http://localhost:4200/
+```
