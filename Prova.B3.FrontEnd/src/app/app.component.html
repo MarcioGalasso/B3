@@ -1,0 +1,78 @@
+<mat-card>
+  <mat-card-header>
+    <div mat-card-avatar   class="avatar-b3"></div>
+    <mat-card-title>Vaga Desenvolvedor B3</mat-card-title>
+    <mat-card-subtitle>Calculo Cdb</mat-card-subtitle>
+  </mat-card-header>
+</mat-card>
+<mat-card>
+
+  <mat-card>
+    <mat-card-header>
+      <h4>Informe valores para simulação rendimentos.</h4>
+    </mat-card-header>
+
+    <form class="form"  #cdbForm="ngForm" (ngSubmit)="simularRendimento()">
+   
+      <table   class="form-full-width" cellspacing="0">
+        <tr>
+            <td>
+              <mat-form-field class="form-full-width">
+              <mat-label>Valor inicial investimento</mat-label>
+              <input matInput placeholder="100.00"  type="number" [(ngModel)]="cdb.valor" name="valor">
+              </mat-form-field>
+            </td>
+            <td>
+              <mat-form-field class="form-full-width">
+              <mat-label>Meses investimento</mat-label>
+              <input matInput placeholder="24" type="number"  [(ngModel)]="cdb.meses" name="meses">
+              </mat-form-field>
+            </td>
+            <td>
+              <div class="button-row">
+                <button mat-raised-button color="primary" type="submit">Simular</button>
+              </div>
+          
+            </td>
+        </tr>
+      </table>
+    
+
+    </form>
+
+  </mat-card>
+  <mat-card>
+
+  <mat-card-content>
+<table mat-table #cdbTable [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="valor">
+    <th mat-header-cell *matHeaderCellDef> Valor </th>
+    <td mat-cell *matCellDef="let element"> {{element.valor}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="meses">
+    <th mat-header-cell *matHeaderCellDef> Meses </th>
+    <td mat-cell *matCellDef="let element"> {{element.meses}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="imposto">
+    <th mat-header-cell *matHeaderCellDef> Imposto </th>
+    <td mat-cell *matCellDef="let element"> {{element.imposto}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="liquido">
+    <th mat-header-cell *matHeaderCellDef> Liquido </th>
+    <td mat-cell *matCellDef="let element"> {{element.liquido}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="bruto">
+    <th mat-header-cell *matHeaderCellDef> Bruto </th>
+    <td mat-cell *matCellDef="let element"> {{element.bruto}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+</mat-card-content>
+</mat-card>

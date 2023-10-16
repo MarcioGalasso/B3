@@ -1,0 +1,16 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/Prova.B3.Api/bin/Debug/net6.0
+/Prova.B3.Api/obj
+/.vs/Prova.B3/FileContentIndex
+/Prova.B3.Domain/bin/Debug/net6.0
+/Prova.B3.Domain/obj
+/Prova.B3.FrontEnd/.vscode
+/Prova.B3.Repository/bin/Debug/net6.0
+/Prova.B3.Repository/obj
+/Prova.B3.Services/bin/Debug/net6.0
+/Prova.B3.Services/obj
+/Prova.B3.Tests/bin/Debug/net6.0
+/Prova.B3.Tests/obj
