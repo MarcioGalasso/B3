@@ -3,12 +3,10 @@
 
 Calculo de rendimentos Cdb.
 
-Projeto Backend estruturado com onion architecture, tulizando .net 6, fluent validation , xunit fluentAssertion.
+Projeto Backend estruturado com onion architecture, utilizando .net 6, fluent validation , xunit fluentAssertion.
 
-Projeto front desenvolvido em Angular  16.2 com 
+Projeto front desenvolvido em Angular com 
 Angular Material 16.2.0
-
-
 
 
 ## Instalação/Exec
@@ -22,7 +20,9 @@ dotnet run
 ```
 Back-end ->  Teste.B3.FrontEnd
 
+Instalar Node v- 18.18.2  -> Releases [pip](https://nodejs.org/en/download/releases) 
 ```bash
+npm install -g @angular/cli@16.2.6
 npm install
 ng serve
 ```
